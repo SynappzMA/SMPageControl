@@ -153,7 +153,7 @@ static SMPageControlStyleDefaults _defaultStyleForSystemVersion;
 	for (NSInteger i = 0; i < _numberOfPages; i++) {
 		NSNumber *indexNumber = @(i);
 		
-		if (i == _displayedPage) {
+		if (i <= _displayedPage) {
 			fillColor = _currentPageIndicatorTintColor ? _currentPageIndicatorTintColor : [UIColor whiteColor];
 			image = _currentPageImages[indexNumber];
 			if (nil == image) {
